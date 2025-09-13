@@ -100,13 +100,14 @@ y responder rápidamente a cambios en la carga de trabajo.
   </textarea>
 
   <!-- Botón para redirigir -->
-  <button onclick="redirigir()">Ir a /log/deben</button>
+  <button onclick="redirigir()">Ir a /log</button>
 
   <script>
     function redirigir() {
       const base = window.location.origin + window.location.pathname.replace(/\/$/, '');
-      window.location.href = base + '/log';
+      window.location.href = base + '/log.html';
     }
   </script>
 </body>
 </html>
+
