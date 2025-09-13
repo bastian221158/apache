@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Acciones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0078d4 0%, #6b4694 100%);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 1000px;
+            overflow-x: auto;
+            padding: 30px;
+        }
+
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px 15px 0 0;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #0078d4;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        .capture-link {
+            color: #0078d4;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f3f3f3;
+            color: #555;
+            border-radius: 0 0 15px 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Registro de Acciones</h1>
+            <p>Tabla de seguimiento con hora, acción, resultado y evidencia</p>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Acción</th>
+                    <th>Resultado</th>
+                    <th>Captura / Prueba</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:20</td>
+                    <td>Creación de la máquina</td>
+                    <td>Correcto</td>
+                    <td><a href="https://i.ibb.co/h1XBw1Lv/IMG-20250913-092103.jpg" class="capture-link">Ver captura</a></td>
+                </tr>
+                <tr>
+                    <td>9:40</td>
+                    <td>Prueba de conexión</td>
+                    <td>Conexión Exitosa</td>
+                    <td><a href="https://i.ibb.co/FLP6hhwX/IMG-20250913-094052.jpg" class="capture-link">Ver prueba</a></td>
+                </tr>
+                <tr>
+                    <td>9:46</td>
+                    <td>Actualizado</td>
+                    <td>Demoro pero funciona</td>
+                    <td><a href="https://i.ibb.co/Ld2vLDQJ/IMG-20250913-094708.jpg" class="capture-link">Ver Prueba</a></td>
+                </tr>
+		<tr>
+		    <td>10:42</td>
+                    <td>Maquina Funcionando</td>
+                    <td>Demoro mucho pero funciona</td>
+                    <td><a href="https://i.ibb.co/H6S8QcS/IMG-20250913-104419.jpg
+" class="capture-link">Ver Prueba</a></td>
+		</tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <p>Registro de pruebas | Actualizado</p>
+        </footer>
+    </div>
+</body>
+</html>
