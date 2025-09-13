@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirección con Roles</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .roles {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .rol {
+      text-align: center;
+    }
+
+    .rol img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .rol p {
+      margin-top: 8px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    textarea {
+      width: 90%;
+      max-width: 600px;
+      min-height: 150px;
+      resize: none;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: #fff;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #005a9e;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Imágenes y roles -->
+  <div class="roles">
+    <div class="rol">
+      <img src="https://i.ibb.co/m5dJV5rN/IMG-20250913-WA0000.jpg" alt="Operador">
+      <p>Operador</p>
+    </div>
+    <div class="rol">
+      <img src="https://i.ibb.co/SwHN4FVT/631950b46991a422d1e0f213c9271177.jpg" alt="Logger">
+      <p>Logger</p>
+    </div>
+  </div>
+
+  <!-- Texto descriptivo ampliado -->
+  <textarea readonly>
+En esta unidad aprendimos a crear y administrar una máquina virtual en la nube. 
+Exploramos el proceso completo: desde la creación de la instancia, la configuración 
+de recursos y redes, hasta la conexión remota segura. También comprendimos las 
+buenas prácticas para optimizar el uso de CPU, memoria y almacenamiento, asegurando 
+un rendimiento estable y un costo eficiente. 
+
+Además, revisamos estrategias de monitoreo y herramientas para escalar la infraestructura 
+según la demanda, lo que nos brinda la capacidad de mantener alta disponibilidad 
+y responder rápidamente a cambios en la carga de trabajo.
+  </textarea>
+
+  <!-- Botón para redirigir -->
+  <button onclick="redirigir()">Ir a /log/deben</button>
+
+  <script>
+    function redirigir() {
+      const base = window.location.origin + window.location.pathname.replace(/\/$/, '');
+      window.location.href = base + '/log';
+    }
+  </script>
+</body>
+</html>
